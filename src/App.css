@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  height: 200vh; /* Ensure page scrolls */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #fff;
+  transition: background-color 1s ease-in-out; /* Smooth transition */
+}
+
+.white-section {
+  background-color: white;
+  color: black;
+}
+
+.black-section {
+  background-color: black;
+  color: white;
+}
+
+.container:hover .white-section {
+  background-color: black;
+  color: white;
+}
+
+.container:hover .black-section {
+  background-color: white;
+ color: black;
+}
